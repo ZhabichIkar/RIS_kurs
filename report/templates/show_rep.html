@@ -1,0 +1,18 @@
+
+    <table border="1">
+        <tr class="title">
+            <td>Количество товаров</td>
+            <td>Общая выручка</td>
+            <td>Месяц</td>
+            <td>Год</td>
+        </tr>
+            {% for result in results %}
+                <tr>   
+                    <td>{{result.count_of_bought}}</td>
+                    <td>{{result.sum}}</td>
+                    <td>{{result.rep_month}}</td>
+                    <td>{{result.rep_year}}</td>
+                </tr>
+            {% endfor%}
+            
+    </table>

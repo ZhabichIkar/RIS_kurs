@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главное меню</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h5>{{message}}</h5>
+    <div class="main">
+        <h2 style="text-align: center;">Главное меню</h2>
+        <a href="{{url_for('query_bp.get_category')}}">Работа с запросами</a><br />
+        <a href="{{url_for('auth_bp.auth_index')}}">Авторизация</a><br />
+        <a href="{{url_for('report_bp.watch_report')}}">Просмотр отчета</a> <br />
+        <a href="{{url_for('report_bp.cr_report')}}">Создание отчета</a> <br />
+        <a href="{{url_for('exit_func')}}">Выход из системы</a> <br />
+    </div>
+
+</body>
+</html>

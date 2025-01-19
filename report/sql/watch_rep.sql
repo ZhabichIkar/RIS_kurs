@@ -1,0 +1,1 @@
+SELECT * from report where rep_month = "$input_month" and rep_year = "$input_year"

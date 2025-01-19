@@ -1,0 +1,1 @@
+call supermarket.generate_salary_report("$input_month", "$input_year");

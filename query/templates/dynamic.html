@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Query</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='sem1.css')}}">
+</head>
+<body>
+<div>
+    <h2>{{prod_title}}</h2>
+    <table border="1">
+        <tr class="title">
+            <td>Номер сеанса</td>
+            <td>Номер Зала</td>
+            <td>Место</td>
+            <td>Цена билета</td>
+        </tr>
+        {% for session in session %}
+        <tr>
+            <td>{{session['id_session']}}</td>
+            <td>{{session['id_film']}}</td>
+            <td>{{session['id_cinema_hall']}}</td>
+            <td>{{session['date_of_session']}}</td>
+            <td>{{session['magnification_factor']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>

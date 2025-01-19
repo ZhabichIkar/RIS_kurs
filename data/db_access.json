@@ -1,0 +1,6 @@
+{
+  "cashier":["auth_bp"],
+  "buyer": ["auth_bp"],
+  "manager": ["auth_bp", "query_bp", "report_bp"],
+  "admin": ["query_bp","auth_bp"]
+}
